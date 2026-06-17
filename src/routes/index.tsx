@@ -18,10 +18,15 @@ import { motion } from "motion/react";
 import { useState } from "react";
 
 import heroDoctor from "@/assets/hero-doctor.jpg";
-import clinicInterior from "@/assets/clinic-interior.jpg";
 import doctorAditi from "@/assets/doctor-aditi.jpg";
 import doctorShaswat from "@/assets/doctor-shaswat.jpg";
-import implantDetail from "@/assets/implant-detail.jpg";
+import treatmentSuiteAsset from "@/assets/treatment-suite.png.asset.json";
+import implantDetailAsset from "@/assets/implant-detail-new.png.asset.json";
+import consultationAsset from "@/assets/consultation.png.asset.json";
+
+const treatmentSuite = treatmentSuiteAsset.url;
+const implantDetail = implantDetailAsset.url;
+const consultation = consultationAsset.url;
 
 import {
   clinic,
@@ -481,9 +486,9 @@ function Testimonials() {
 /* ---------------- GALLERY PREVIEW ---------------- */
 function GalleryPreview() {
   const tiles = [
-    { src: clinicInterior, label: "Treatment suite" },
+    { src: treatmentSuite, label: "Treatment suite" },
     { src: implantDetail, label: "Implant detail" },
-    { src: heroDoctor, label: "Consultation" },
+    { src: consultation, label: "Consultation" },
   ];
   return (
     <section className="bg-[color:var(--color-ivory)] py-24 md:py-32">
