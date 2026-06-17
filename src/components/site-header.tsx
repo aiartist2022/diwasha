@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { clinic, services, telLink } from "@/lib/clinic";
-import logoAsset from "@/assets/diwasha-logo.png.asset.json";
+import logoAsset from "@/assets/diwasha-logo-transparent.png.asset.json";
 
 const navLinks = [
   { to: "/about", label: "About" },
@@ -37,12 +37,12 @@ export function SiteHeader() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-20 md:px-8">
+      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-5 md:h-32 md:px-8">
         <Link to="/" className="flex items-center" aria-label="Diwasha Dental Clinic & Implant Centre — home">
           <img
             src={logoAsset.url}
             alt="Diwasha Dental Clinic & Implant Centre"
-            className="h-16 w-auto md:h-20"
+            className="h-24 w-auto md:h-32"
           />
         </Link>
 
@@ -113,8 +113,8 @@ export function SiteHeader() {
       {/* Mobile sheet */}
       {open && (
         <div className="fixed inset-0 z-50 flex flex-col bg-[color:var(--color-ivory)] lg:hidden">
-          <div className="flex h-16 items-center justify-between px-5">
-            <img src={logoAsset.url} alt="Diwasha" className="h-12 w-auto" />
+          <div className="flex h-20 items-center justify-between px-5">
+            <img src={logoAsset.url} alt="Diwasha" className="h-16 w-auto" />
             <button
               type="button"
               aria-label="Close menu"

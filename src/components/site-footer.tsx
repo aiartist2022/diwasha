@@ -18,7 +18,7 @@ function Facebook({ className = "" }: { className?: string }) {
   );
 }
 import { clinic, services, telLink } from "@/lib/clinic";
-import logoAsset from "@/assets/diwasha-logo.png.asset.json";
+import logoAsset from "@/assets/diwasha-logo-white.png.asset.json";
 
 export function SiteFooter() {
   return (
@@ -26,9 +26,11 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <div className="inline-flex items-center rounded-xl bg-white/95 px-4 py-3">
-              <img src={logoAsset.url} alt="Diwasha Dental Clinic & Implant Centre" className="h-20 w-auto" />
-            </div>
+            <img
+              src={logoAsset.url}
+              alt="Diwasha Dental Clinic & Implant Centre"
+              className="h-28 w-auto md:h-32"
+            />
             <p className="serif-italic mt-5 max-w-sm text-lg leading-relaxed text-white/85">
               "{clinic.tagline}."
             </p>
