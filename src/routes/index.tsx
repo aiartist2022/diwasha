@@ -34,6 +34,7 @@ import {
 import { FadeUp, FadeUpChild, FadeUpStagger } from "@/components/fade-up";
 import { GoldRule } from "@/components/section-divider";
 import { StatCounter } from "@/components/stat-counter";
+import { ToothScrollHero } from "@/components/tooth-scroll-hero";
 
 const iconMap = {
   Sparkles,
@@ -104,7 +105,7 @@ export const Route = createFileRoute("/")({
 function HomePage() {
   return (
     <>
-      <Hero />
+      <ToothScrollHero />
       <TrustBar />
       <WhyDiwasha />
       <ServicesSection />
