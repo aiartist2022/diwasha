@@ -27,7 +27,7 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="inline-flex items-center rounded-xl bg-white/95 px-4 py-3">
-              <img src={logoAsset.url} alt="Diwasha Dental Clinic & Implant Centre" className="h-14 w-auto" />
+              <img src={logoAsset.url} alt="Diwasha Dental Clinic & Implant Centre" className="h-20 w-auto" />
             </div>
             <p className="serif-italic mt-5 max-w-sm text-lg leading-relaxed text-white/85">
               "{clinic.tagline}."
