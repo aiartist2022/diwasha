@@ -53,38 +53,38 @@
 :root {
   --radius: 0.625rem;
 
-  /* Brand palette */
-  --background: #f8f5f0;     /* Ivory */
-  --ivory: #f8f5f0;
-  --ivory-deep: #f1ebe1;
-  --foreground: #2d2d2d;     /* Charcoal */
+  /* Brand palette — Diwasha teal/aqua */
+  --background: #f2f9fb;
+  --ivory: #f2f9fb;
+  --ivory-deep: #e2f0f4;
+  --foreground: #15323a;
   --card: #ffffff;
-  --card-foreground: #2d2d2d;
+  --card-foreground: #15323a;
   --popover: #ffffff;
-  --popover-foreground: #2d2d2d;
+  --popover-foreground: #15323a;
 
-  --primary: #0e3a5c;        /* Deep Navy */
-  --primary-foreground: #f8f5f0;
-  --secondary: #1b6b72;      /* Teal */
-  --secondary-foreground: #f8f5f0;
-  --accent: #c9843b;         /* Warm Gold */
-  --accent-foreground: #2d2d2d;
+  --primary: #0d4f5e;        /* Deep teal (logo dark) */
+  --primary-foreground: #f2f9fb;
+  --secondary: #1d8a9b;      /* Mid teal */
+  --secondary-foreground: #f2f9fb;
+  --accent: #4ec5d4;         /* Bright cyan (logo highlight) */
+  --accent-foreground: #0d4f5e;
 
-  --muted: #efe9de;
-  --muted-foreground: #6a635a;
+  --muted: #dceef2;
+  --muted-foreground: #4f6b72;
 
   --destructive: #b3261e;
-  --destructive-foreground: #f8f5f0;
+  --destructive-foreground: #f2f9fb;
 
-  --border: #e6dfd2;
-  --input: #e6dfd2;
-  --ring: #c9843b;
+  --border: #cfe4ea;
+  --input: #cfe4ea;
+  --ring: #4ec5d4;
 
-  --chart-1: #0e3a5c;
-  --chart-2: #1b6b72;
-  --chart-3: #c9843b;
-  --chart-4: #6a635a;
-  --chart-5: #b8a583;
+  --chart-1: #0d4f5e;
+  --chart-2: #1d8a9b;
+  --chart-3: #4ec5d4;
+  --chart-4: #6fd8e2;
+  --chart-5: #a6e4ec;
 }
 
 @layer base {
