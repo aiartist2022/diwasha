@@ -42,7 +42,7 @@ export function SiteHeader() {
           <img
             src={logoAsset.url}
             alt="Diwasha Dental Clinic & Implant Centre"
-            className="h-12 w-auto md:h-14"
+            className="h-16 w-auto md:h-20"
           />
         </Link>
 
@@ -114,7 +114,7 @@ export function SiteHeader() {
       {open && (
         <div className="fixed inset-0 z-50 flex flex-col bg-[color:var(--color-ivory)] lg:hidden">
           <div className="flex h-16 items-center justify-between px-5">
-            <img src={logoAsset.url} alt="Diwasha" className="h-10 w-auto" />
+            <img src={logoAsset.url} alt="Diwasha" className="h-12 w-auto" />
             <button
               type="button"
               aria-label="Close menu"
