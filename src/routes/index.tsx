@@ -393,7 +393,7 @@ function DoctorsSection() {
           {featured.map((d) => (
             <FadeUpChild key={d.slug}>
               <article className="overflow-hidden rounded-3xl bg-white shadow-[var(--shadow-soft)]">
-                <div className="aspect-[5/4] overflow-hidden bg-[color:var(--color-ivory)]">
+                <div className="aspect-[3/4] overflow-hidden bg-[color:var(--color-ivory)]">
                   <img
                     src={d.image}
                     alt={`${d.name}, ${d.role} at Diwasha Dental`}
