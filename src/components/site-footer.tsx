@@ -29,7 +29,7 @@ export function SiteFooter() {
             <img
               src={logoAsset.url}
               alt="Diwasha Dental Clinic & Implant Centre"
-              className="h-28 w-auto md:h-32"
+              className="h-36 w-auto md:h-44"
             />
             <p className="serif-italic mt-5 max-w-sm text-lg leading-relaxed text-white/85">
               "{clinic.tagline}."
