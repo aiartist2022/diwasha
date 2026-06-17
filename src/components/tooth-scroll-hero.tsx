@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 
 import { clinic, whatsappLink } from "@/lib/clinic";
 import { GoldRule } from "@/components/section-divider";
+import doctorHero from "@/assets/doctor-hero.png.asset.json";
+
 
 const FRAME_COUNT = 167;
 const framePath = (i: number) =>
