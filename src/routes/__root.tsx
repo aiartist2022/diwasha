@@ -99,6 +99,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Diwasha Dental" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Diwasha Dental Clinic & Implant Centre — Navrangpura, Ahmedabad" },
+      { name: "twitter:title", content: "Diwasha Dental Clinic & Implant Centre — Navrangpura, Ahmedabad" },
+      { name: "description", content: "A modern website builder for dental clinics, creating beautiful, professional online presences." },
+      { property: "og:description", content: "A modern website builder for dental clinics, creating beautiful, professional online presences." },
+      { name: "twitter:description", content: "A modern website builder for dental clinics, creating beautiful, professional online presences." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/4PnkXkkfzJNLMmJrYLHdFhujiRE3/social-images/social-1781694936513-ChatGPT_Image_Jun_17,_2026,_04_40_26_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/4PnkXkkfzJNLMmJrYLHdFhujiRE3/social-images/social-1781694936513-ChatGPT_Image_Jun_17,_2026,_04_40_26_PM.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
