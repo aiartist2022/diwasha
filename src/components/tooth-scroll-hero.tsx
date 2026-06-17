@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 
 import { clinic, whatsappLink } from "@/lib/clinic";
 import { GoldRule } from "@/components/section-divider";
+import doctorHero from "@/assets/doctor-hero.png.asset.json";
+
 
 const FRAME_COUNT = 167;
 const framePath = (i: number) =>
@@ -134,6 +136,23 @@ export function ToothScrollHero() {
           }}
         />
 
+
+        {/* Doctor portrait — left side, fades on scroll */}
+        <div
+          className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden items-end md:flex"
+          style={{
+            opacity: heroOpacity,
+            transform: `translateY(${heroTranslate * 0.4}px)`,
+            transition: "opacity 120ms linear",
+          }}
+        >
+          <img
+            src={doctorHero.url}
+            alt="Dr. Aditi Diwan, Oral Surgeon at Diwasha Dental"
+            className="h-[92%] w-auto max-w-[46vw] object-contain object-bottom drop-shadow-[0_30px_40px_rgba(0,0,0,0.18)]"
+          />
+        </div>
+
         {/* Preloader */}
         {!ready && (
           <div className="absolute inset-0 z-30 flex flex-col items-center justify-center bg-[color:var(--color-ivory)] text-[color:var(--color-primary)]">
@@ -159,7 +178,8 @@ export function ToothScrollHero() {
           }}
         >
           <div className="mx-auto flex h-full max-w-7xl flex-col justify-center px-6 md:px-10">
-            <div className="pointer-events-auto max-w-2xl">
+            <div className="pointer-events-auto max-w-2xl md:ml-auto md:text-left">
+
               <motion.div
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
