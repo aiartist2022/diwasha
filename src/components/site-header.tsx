@@ -37,12 +37,12 @@ export function SiteHeader() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-5 md:h-32 md:px-8">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:h-28 md:px-8">
         <Link to="/" className="flex items-center" aria-label="Diwasha Dental Clinic & Implant Centre — home">
           <img
             src={logoAsset.url}
             alt="Diwasha Dental Clinic & Implant Centre"
-            className="h-24 w-auto md:h-32"
+            className="h-20 w-auto md:h-28"
           />
         </Link>
 
