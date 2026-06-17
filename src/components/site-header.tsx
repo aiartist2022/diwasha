@@ -113,8 +113,8 @@ export function SiteHeader() {
       {/* Mobile sheet */}
       {open && (
         <div className="fixed inset-0 z-50 flex flex-col bg-[color:var(--color-ivory)] lg:hidden">
-          <div className="flex h-20 items-center justify-between px-5">
-            <img src={logoAsset.url} alt="Diwasha" className="h-16 w-auto" />
+          <div className="flex h-16 items-center justify-between px-5">
+            <img src={logoAsset.url} alt="Diwasha" className="h-14 w-auto" />
             <button
               type="button"
               aria-label="Close menu"
