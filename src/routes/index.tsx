@@ -486,9 +486,9 @@ function Testimonials() {
 /* ---------------- GALLERY PREVIEW ---------------- */
 function GalleryPreview() {
   const tiles = [
-    { src: clinicInterior, label: "Treatment suite" },
+    { src: treatmentSuite, label: "Treatment suite" },
     { src: implantDetail, label: "Implant detail" },
-    { src: heroDoctor, label: "Consultation" },
+    { src: consultation, label: "Consultation" },
   ];
   return (
     <section className="bg-[color:var(--color-ivory)] py-24 md:py-32">
