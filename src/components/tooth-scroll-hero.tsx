@@ -139,7 +139,7 @@ export function ToothScrollHero() {
 
         {/* Doctor portrait — left side, fades on scroll */}
         <div
-          className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden items-end md:flex"
+          className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden items-end pb-16 md:flex md:pb-20"
           style={{
             opacity: heroOpacity,
             transform: `translateY(${heroTranslate * 0.4}px)`,
@@ -149,7 +149,7 @@ export function ToothScrollHero() {
           <img
             src={doctorHero.url}
             alt="Dr. Aditi Diwan, Oral Surgeon at Diwasha Dental"
-            className="h-[92%] w-auto max-w-[46vw] object-contain object-bottom drop-shadow-[0_30px_40px_rgba(0,0,0,0.18)]"
+            className="h-[100%] w-auto max-w-[54vw] object-contain object-bottom drop-shadow-[0_30px_40px_rgba(0,0,0,0.18)]"
           />
         </div>
 
