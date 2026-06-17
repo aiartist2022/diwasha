@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { clinic, services, telLink } from "@/lib/clinic";
+import logoAsset from "@/assets/diwasha-logo.png.asset.json";
 
 const navLinks = [
   { to: "/about", label: "About" },
@@ -37,13 +38,12 @@ export function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-20 md:px-8">
-        <Link to="/" className="flex items-baseline gap-2" aria-label="Diwasha Dental — home">
-          <span className="font-display text-2xl tracking-tight text-[color:var(--color-primary)] md:text-[28px]">
-            Diwasha
-          </span>
-          <span className="serif-italic text-base text-[color:var(--color-accent)] md:text-lg">
-            dental
-          </span>
+        <Link to="/" className="flex items-center" aria-label="Diwasha Dental Clinic & Implant Centre — home">
+          <img
+            src={logoAsset.url}
+            alt="Diwasha Dental Clinic & Implant Centre"
+            className="h-12 w-auto md:h-14"
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -114,7 +114,7 @@ export function SiteHeader() {
       {open && (
         <div className="fixed inset-0 z-50 flex flex-col bg-[color:var(--color-ivory)] lg:hidden">
           <div className="flex h-16 items-center justify-between px-5">
-            <span className="font-display text-2xl text-[color:var(--color-primary)]">Diwasha</span>
+            <img src={logoAsset.url} alt="Diwasha" className="h-10 w-auto" />
             <button
               type="button"
               aria-label="Close menu"
