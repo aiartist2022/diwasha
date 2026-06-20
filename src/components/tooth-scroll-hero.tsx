@@ -139,7 +139,7 @@ export function ToothScrollHero() {
 
         {/* Doctor portrait — left side, fades on scroll */}
         <div
-          className="pointer-events-none absolute inset-y-0 left-0 z-10 hidden items-end pb-16 md:flex md:pb-20"
+          className="pointer-events-none absolute inset-y-0 left-[6vw] z-10 hidden items-end pb-16 md:flex md:pb-20"
           style={{
             opacity: heroOpacity,
             transform: `translateY(${heroTranslate * 0.4}px)`,
